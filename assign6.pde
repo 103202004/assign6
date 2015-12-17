@@ -56,7 +56,12 @@ void setup () {
 
 void draw()
 {
-
+for (int i = 0; i < 5; i++){
+                if(bullets[i] != null){
+                  bullets[i].move();
+                  bullets[i].draw();
+                }
+}
 
 	if (state == GameState.START) {
 		bg.draw();	
